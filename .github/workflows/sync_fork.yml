@@ -1,0 +1,19 @@
+name: Sync Fork With Upstream
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # every 30 minutes
+  workflow_dispatch: # on button click
+
+jobs:
+  sync_with_upstream:
+    runs-on: ubuntu-latest
+    name: Sync master with upstream latest
+    
+    steps:
+      - uses: tgymnich/fork-sync@v1.2.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          owner: PX4  #upstream owner
+          base: master #target fork branch (the one in this repo) 
+          head: master #upstream branch
