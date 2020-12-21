@@ -30,7 +30,9 @@ jobs:
          git remote add upstream "$upstream_url"
          git fetch upstream
          
-         PULL_OUTPUT=$(git pull --no-rebase --unshallow -s recursive -X ours upstream "$upstream_branch")   #pull from upstream, merge favoring our changes if conflicts
+         PULL_OUTPUT=$(git pull --no-rebase -s recursive -X ours upstream "$upstream_branch")   #pull from upstream, merge favoring our changes if conflicts
+         
+         echo "Pull Output: `$PULL_OUTPUT` "
          
          if [ "$PULL_OUTPUT" != "Already up to date." ]; then
            #set commit message
