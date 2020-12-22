@@ -1,4 +1,6 @@
-Custom changes from fork
+Custom changes from fork:
+
+test edit for super repo auto update
 
 # Gazebo for MAVLink SITL and HITL
 
