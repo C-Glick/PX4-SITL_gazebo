@@ -1,3 +1,9 @@
+# This workflow will pull an upstream branch and attempt to merge it with the target branch
+# its merge options are set to --no-rebase and -s recursive 
+# change the target branch, upstream url, and upstream branch as needed
+# it can also resolve conflicts that come from forking your own version of a submodule
+# by using `git reset HEAD <submodule dir>`
+
 name: Merge Upstream Changes
 on:
  schedule:
