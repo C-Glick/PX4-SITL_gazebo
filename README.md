@@ -1,7 +1,3 @@
-Custom changes from fork:
-
-test edit for super repo auto update
-
 # Gazebo for MAVLink SITL and HITL
 
 [![Build Status](https://github.com/PX4/sitl_gazebo/workflows/Build%20Tests/badge.svg)](https://github.com/PX4/sitl_gazebo/actions?query=workflow%3A%22Build+Tests%22) [![MacOS Build Tests](https://github.com/PX4/sitl_gazebo/workflows/MacOS%20Build%20Tests/badge.svg)](https://github.com/PX4/sitl_gazebo/actions?query=workflow%3A%22MacOS+Build+Tests%22) 
